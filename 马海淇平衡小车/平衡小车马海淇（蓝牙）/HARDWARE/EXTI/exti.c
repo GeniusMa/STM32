@@ -6,10 +6,10 @@ void MPU6050_EXTI_Init(void)
 	EXTI_InitTypeDef EXTI_InitStruct;
 	GPIO_InitTypeDef GPIO_InitStruct;
 	
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO,ENABLE);//开启时钟
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO,ENABLE);
 	
-	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_IPU;/**【1】**///GPIO_Mode_AF_PP
-	GPIO_InitStruct.GPIO_Pin=GPIO_Pin_5;//PB5配置为上拉输入
+	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_IPU;
+	GPIO_InitStruct.GPIO_Pin=GPIO_Pin_5;
 	GPIO_InitStruct.GPIO_Speed=GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB,&GPIO_InitStruct);	
 	
