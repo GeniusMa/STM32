@@ -92,9 +92,9 @@ extern char stop;
 extern u8 Fore,Back,Left,Right;
 extern int PWM_MAX,PWM_MIN;
 extern int MOTO1,MOTO2;
-extern float Pitch,Roll,Yaw;		//角度
-extern short gyrox,gyroy,gyroz;	//陀螺仪--角速度
-extern short aacx,aacy,aacz;		//加速度
+extern float Pitch,Roll,Yaw;		
+extern short gyrox,gyroy,gyroz;
+extern short aacx,aacy,aacz;		
 extern int Encoder_Left,Encoder_Right;
 void NVIC_Config(void);
 #endif
